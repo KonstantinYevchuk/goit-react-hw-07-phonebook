@@ -17,7 +17,7 @@ export const fetchContacts = createAsyncThunk(
 );
 
 export const addContact = createAsyncThunk(
-  "contacts/contactAdd",
+  "contacts/addContact",
   async (contact, thunkAPI) => {
     try {
         const data = await contactAdd(contact);
@@ -29,7 +29,7 @@ export const addContact = createAsyncThunk(
 );
 
 export const deleteContact = createAsyncThunk(
-  "contacts/contactDelete",
+  "contacts/deleteContact",
   async (id, thunkAPI) => {
     try {
         const data = await contactDelete(id);
