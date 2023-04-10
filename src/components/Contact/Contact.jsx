@@ -14,7 +14,7 @@ export const Contact = ({contact}) => {
         <>
             {contact.name}: {contact.number}
             <Button type="button" onClick={handleDelete} >
-            {isLoading && <Loader size={12}/>  }
+            {isLoading && <Loader size={5}/>  }
                 Delete
                 </Button>
         </>    
